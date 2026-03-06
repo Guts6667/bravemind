@@ -68,3 +68,8 @@ Use Prettier format-on-save for consistent code style.
   "editor.defaultFormatter": "esbenp.prettier-vscode"
 }
 ```
+## Environment variables
+
+- `.env.example` documents required variables
+- real `.env` files must never be committed
+- variables exposed to the client must start with `NEXT_PUBLIC_`
