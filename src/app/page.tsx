@@ -1,4 +1,4 @@
-import Image from "next/image";
+
 import { APP_NAME } from "@/lib/text";
 
 export default function Home() {
