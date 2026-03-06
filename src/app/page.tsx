@@ -1,10 +1,18 @@
+import { Button } from "@/components/ui/button";
 import { env } from "@/lib/env";
 
 export default function Home() {
   return (
-    <div className="flex flex-col min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <h1 className="text-3xl font-bold">{env.NEXT_PUBLIC_APP_NAME}</h1>
+    <main className="flex min-h-screen flex-col items-center justify-center gap-6 bg-background text-foreground">
+      <h1 className="text-3xl font-semibold">{env.NEXT_PUBLIC_APP_NAME}</h1>
 
-    </div>
+      <div className="rounded-sm border border-border  p-6 ">
+        <p className="text-muted-foreground">
+          A calm journaling interface for behavior awareness.
+        </p>
+      </div>
+
+      <Button>Primary action</Button>
+    </main>
   );
 }
